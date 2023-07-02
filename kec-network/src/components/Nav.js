@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css";
 // import exampleImage from 'components/kec_banner.png';
 
 function Nav() {
   return (
-    <div>
+    <div className="Nav">
       <img
         src="http://keck.ac.in/images/logo.png"
         alt="Example"
