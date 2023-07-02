@@ -6,7 +6,7 @@ import "./Nav.css";
 function Nav() {
   return (
     <div className="Nav">
-      <img
+      <img className="image"
         src="http://keck.ac.in/images/logo.png"
         alt="Example"
         style={{ width: "100%" }}
@@ -16,10 +16,10 @@ function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/login">LoginForm</Link>
+          <Link to="/login">Login</Link>
         </li>
         <li>
-          <Link to="/register">RegistrationForm</Link>
+          <Link to="/register">Registration</Link>
         </li>
       </ul>
     </div>
