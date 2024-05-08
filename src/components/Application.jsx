@@ -6,7 +6,7 @@ import Nav from './Nav'
 function Application() {
     return (
         <div>
-            {/* <Nav /> */}
+            <Nav />
             <Home />
             <Place />
         </div>

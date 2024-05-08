@@ -34,7 +34,7 @@ function Nav() {
       </div>
 
       {/* For large screens, display navigation links */}
-      <div className="hidden lg:flex justify-end items-center text-md font-semibold">
+      <div className="hidden lg:flex justify-end items-center text-md font-semibold gap-10">
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">TOUR PACKAGES</a>
