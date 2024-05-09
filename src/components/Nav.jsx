@@ -8,7 +8,7 @@ function Nav() {
   const [showMenuItem, setShowMenuItem] = useState(false);
 
   return (
-    <div className='flex fixed top-0 w-full justify-between'>
+    <div className='flex fixed top-0 opacity-80 w-full justify-between p-3 lg:px-36 lg:py-5 bg-white'>
 
       <div>
         <h1 className="font-black text-4xl">LOGO</h1>
@@ -17,14 +17,14 @@ function Nav() {
       <div className="bg-white">
 
         {/* For small screens, show/hide navigation links */}
-        <div className="lg:hidden flex flex-col items-end">
+        <div className="lg:hidden flex flex-col gap-8 items-end">
 
           <Button variant="contained" onClick={() => setShowMenuItem(!showMenuItem)}>
             {showMenuItem ? <CloseIcon /> : <MenuIcon />}
           </Button>
 
           {showMenuItem && (
-            <div className="flex flex-col items-end">
+            <div className="flex flex-col items-end gap-8">
               <Link className="">HOME</Link>
               <Link className="">ABOUT</Link>
               <Link className="">TOUR PACKAGES</Link>
