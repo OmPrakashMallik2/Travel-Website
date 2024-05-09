@@ -8,9 +8,9 @@ function Nav() {
   const [showMenuItem, setShowMenuItem] = useState(false);
 
   return (
-    <div className='flex fixed top-0 opacity-70 w-full justify-between p-3 lg:px-36 lg:py-5 bg-white'>
+    <div className='flex fixed top-0 w-full justify-between p-3 lg:px-36 lg:py-5 bg-white'>
 
-      <div>
+      <div className="items-center">
         <h1 className="font-black text-4xl">LOGO</h1>
       </div>
 
