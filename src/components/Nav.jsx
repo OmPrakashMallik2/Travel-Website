@@ -8,13 +8,13 @@ function Nav() {
   const [showMenuItem, setShowMenuItem] = useState(false);
 
   return (
-    <div className='flex fixed top-0 w-full justify-between p-3 lg:px-36 lg:py-5 bg-white'>
+    <div className='flex fixed top-0 w-full justify-between p-3 lg:px-36 lg:py-5 bg-white bg-opacity-70 z-50'>
 
       <div className="items-center">
         <h1 className="font-black text-4xl">LOGO</h1>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white bg-opacity-70 lg:bg-opacity-50 rounded-sm pl-3">
 
         {/* For small screens, show/hide navigation links */}
         <div className="lg:hidden flex flex-col gap-5 items-end">
