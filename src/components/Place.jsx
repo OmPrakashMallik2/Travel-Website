@@ -1,17 +1,20 @@
 import { Button } from '@mui/material'
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Place() {
 
+  const navigate = useNavigate();
   const places = [
-    { id: 1, image: "https://images.unsplash.com/photo-1594102552386-793e5a27ad10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
-    { id: 2, image: "https://images.unsplash.com/photo-1594102552386-793e5a27ad10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
-    { id: 3, image: "https://images.unsplash.com/photo-1594102552386-793e5a27ad10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
-    { id: 4, image: "https://images.unsplash.com/photo-1594102552386-793e5a27ad10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
+    { id: 1, image: "https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
+    { id: 2, image: "https://images.unsplash.com/photo-1602643163983-ed0babc39797?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
+    { id: 3, image: "https://images.unsplash.com/photo-1591949334567-0bed0d0dc660?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
+    { id: 4, image: "https://images.unsplash.com/photo-1470075446540-4391a96ec621?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
+    { id: 5, image: "https://images.unsplash.com/photo-1594102552386-793e5a27ad10?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", name: "Place Name", description: "des...." },
   ];
 
   return (
-    <div className='lg:px-36 lg:py-10 p-5'>
+    <div className='lg:px-36 lg:py-10 px-5'>
       <div className='py-5'>
         <h1 className='text-3xl lg:text-5xl font-bold text-center'>Most famous places</h1>
         <p className='text-xl lg:text-2xl text-center p-2'>recommendation</p>
@@ -27,7 +30,7 @@ function Place() {
               <div className='flex flex-col items-center pt-3 pb-5 gap-3'>
                 <h1 className='text-2xl lg:text-3xl font-bold'>{place.name}</h1>
                 <p className='text-left font-normal text-base px-5' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum iure ratione et officia! Autem delectus consequatur assumenda corporis provident dolor, nemo, quisquam</p>
-                <Button variant='contained' >Find out more...</Button>
+                <Button onClick={() => navigate('/packages')} variant='contained' >Find out more...</Button>
               </div>
             </div>
           ))
